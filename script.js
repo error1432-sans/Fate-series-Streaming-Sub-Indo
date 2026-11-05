@@ -38,3 +38,18 @@ function searchAnime() {
     });
 
 }
+
+
+function playEpisode(number) {
+
+    const player =
+        document.getElementById("animePlayer");
+
+    const videoPath =
+        `assets/videos/Fate stay night Movie Heaven s Feel - II. Lost Butterfly -${String(number).padStart(2, "0")}.mp4`;
+
+    player.src = videoPath;
+
+    player.load();
+
+}

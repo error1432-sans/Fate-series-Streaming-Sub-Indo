@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Watch AnimeVerse</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h1 class="logo">
+            Anime<span>Verse</span>
+        </h1>
+
+        <a href="index.html">Back Home</a>
+
+    </header>
+
+
+    <main class="watch-page">
+
+        <h2>
+            Fate / Stay Night:
+            Heaven's Feel II — Lost Butterfly
+        </h2>
+
+        <p>Episode 01</p>
+
+
+        <!-- VIDEO PLAYER -->
+
+        <video
+            id="animePlayer"
+            controls
+            playsinline
+            preload="metadata"
+        >
+
+            <source
+                src="assets/videos/episode-01.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support video playback.
+
+        </video>
+
+
+        <section class="episode-section">
+
+            <h3>Episodes</h3>
+
+            <button onclick="playMovie">
+                Movie
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
