@@ -1,0 +1,201 @@
+
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #101018;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 6%;
+
+    background: #191923;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logo span {
+    color: #a970ff;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #24203c,
+            #151522
+        );
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.subtitle {
+    color: #b58aff;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.hero p {
+    color: #c3c3d0;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 20px;
+    padding: 13px 25px;
+
+    background: #9757ee;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+}
+
+
+/* SEARCH */
+
+.search-section {
+    padding: 30px 6%;
+}
+
+.search-section input {
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid #39394b;
+    border-radius: 8px;
+
+    background: #20202c;
+    color: white;
+}
+
+
+/* CATALOG */
+
+main {
+    padding: 20px 6%;
+}
+
+main h2 {
+    margin-bottom: 25px;
+}
+
+.anime-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.anime-card {
+    background: #20202c;
+    padding: 10px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.poster {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+
+    border-radius: 7px;
+}
+
+.poster-one {
+    background: linear-gradient(135deg, #653d94, #252c61);
+}
+
+.poster-two {
+    background: linear-gradient(135deg, #a44c67, #452c72);
+}
+
+.poster-three {
+    background: linear-gradient(135deg, #367b91, #28345f);
+}
+
+.poster-four {
+    background: linear-gradient(135deg, #bd7443, #543a82);
+}
+
+.anime-card h3 {
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+.anime-card p {
+    margin-top: 6px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 700px) {
+
+    .anime-grid {
+        grid-template-columns:
+            repeat(4, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 52px;
+    }
+
+}
